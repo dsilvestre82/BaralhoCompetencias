@@ -81,7 +81,7 @@ p {
 }
 
 .carta {
-  width: 80px;
+  width: 120px;
   height: auto;
   cursor: grab;
   transition: transform 0.2s ease;
@@ -142,4 +142,5 @@ p {
   white-space: pre-wrap;
   font-family: monospace;
   font-size: 0.95em;
+
 }

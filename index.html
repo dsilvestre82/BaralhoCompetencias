@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Competências</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Mapa de Competências</h1>
+  <p>Arraste as cartas para os quadrantes conforme sua autoavaliação.</p>
+
+  <div id="quadrantes">
+    <div class="area" id="area1" data-label="Tenho Interesse e Preciso Desenvolver!"></div>
+    <div class="area" id="area2" data-label="Tenho Interesse e Sei Fazer!"></div>
+    <div class="area" id="area3" data-label="Não Tenho Interesse e Não Sei Fazer!"></div>
+    <div class="area" id="area4" data-label="Não Tenho Interesse, mas Sei Fazer!"></div>
+  </div>
+
+  <h2>Cartas de Competências</h2>
+  <div id="carrossel-container">
+    <button id="scroll-left">⬅️</button>
+    <div id="carrossel">
+      <img src="assets/imagens/Alfabet.png" draggable="true" id="Alfabet" class="carta" alt="Alfabetização em Dados">
+      <img src="assets/imagens/Comunica.png" draggable="true" id="Comunica" class="carta" alt="Comunicação">
+      <img src="assets/imagens/Criativ.png" draggable="true" id="Criativ" class="carta" alt="Criatividade">
+      <img src="assets/imagens/Curious.png" draggable="true" id="Curious" class="carta" alt="Curiosidade">
+      <img src="assets/imagens/FocoUser.png" draggable="true" id="FocoUser" class="carta" alt="Foco no Usuário">
+      <img src="assets/imagens/GestConflitos.png" draggable="true" id="GestConflitos" class="carta" alt="Gestão de Conflitos">
+      <img src="assets/imagens/GestConhec.png" draggable="true" id="GestConhec" class="carta" alt="Gestão do Conhecimento">
+      <img src="assets/imagens/GestRiscos.png" draggable="true" id="GestRiscos" class="carta" alt="Gestão de Riscos">
+      <img src="assets/imagens/Inovacao.png" draggable="true" id="Inovacao" class="carta" alt="Inovação">
+      <img src="assets/imagens/Insurg.png" draggable="true" id="Insurg" class="carta" alt="Insurgência">
+      <img src="assets/imagens/Iteracao.png" draggable="true" id="Iteracao" class="carta" alt="Iteração">
+      <img src="assets/imagens/MapCompete.png" draggable="true" id="MapCompete" class="carta" alt="Mapeamento de Competências">
+      <img src="assets/imagens/OrientServ.png" draggable="true" id="OrientServ" class="carta" alt="Orientação para Serviços">
+      <img src="assets/imagens/PlanOrg.png" draggable="true" id="PlanOrg" class="carta" alt="Planejamento e Organização">
+    </div>
+    <button id="scroll-right">➡️</button>
+  </div>
+
+  <button id="btn-relatorio" onclick="gerarRelatorio()">Gerar Relatório</button>
+
+  <div id="relatorio-container" style="display:none;">
+    <h2>Relatório Gerado</h2>
+    <pre id="relatorio-output"></pre>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

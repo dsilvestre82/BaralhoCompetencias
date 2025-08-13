@@ -59,6 +59,12 @@ p {
   font-size: 0.9em;
 }
 
+.area img {
+  width: 80px; 
+  height: auto;
+  margin: 5px;
+}
+
 /* Carrossel */
 #carrossel-container {
   display: flex;
@@ -144,4 +150,5 @@ p {
   font-size: 0.95em;
 
 }
+
 
